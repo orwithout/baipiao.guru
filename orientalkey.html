@@ -8,15 +8,15 @@
     <div class="container">
 
         <h1>东方密码算法设计挑战</h1>
-        <h2>目标：</h2>
-        <p>设计一个算法，用于将256位二进制数（例如IPNS地址）压缩为四个汉字。所选汉字必须来自一个包含2048个常用汉字的预设字库。</p>
-        <a href="./orientalkey.png"><img src="./orientalkey.png" height="233" width="233"></a>
+        <h2>目标: </h2>
+        <p>设计一个算法，用于将256位二进制数（例如<a href="https://docs.ipfs.tech/concepts/ipns/">IPNS</a>地址）压缩为四个汉字。所选汉字必须来自一个包含2048个常用汉字的预设字库。</p>
+        <a href="./orientalkey.png"><img src="./orientalkey.png" height="377" width="377"></a>
         
-        <h2>具体要求：</h2>
+        <h2>具体要求: </h2>
         <ul>
-            <li><strong>输入格式：</strong>256位二进制数。例如(16进制表达): b531535c319f1dd489d9e0d3bd1cb8815236506b53b612cebce47c0a9677997d</li>
+            <li><strong>输入格式：</strong>256位二进制数。例如（16进制表达）: b531535c319f1dd489d9e0d3bd1cb8815236506b53b612cebce47c0a9677997d</li>
             <li><strong>汉字字库：</strong>算法必须从一个预设的2048个常用汉字集中选择汉字。</li>
-            <li><strong>压缩过程：</strong>压缩算法可以利用大规模计算资源，计算时间可长达数周。</li>
+            <li><strong>压缩过程：</strong>压缩算法可以利用大规模计算资源，计算时间可长达数周（个人电脑,例如: intel-13700cpu、Nvidia-4060显卡）</li>
             <li><strong>解压过程：</strong>解压算法应能从四个汉字中快速恢复出一组可能的原始二进制数，并通过后续处理迅速（数秒内）减少到一个较小的候选集（如200个选项），其中包含原始数字。</li>
         </ul>
         <h2>评估标准：</h2>
@@ -25,7 +25,7 @@
             <li><strong>解压算法的效率和准确性：</strong>快速恢复和锁定原始数字的能力，以及所需的计算量。</li>
         </ul>
         <h2>应用背景：</h2>
-        <p>探索使用四个汉字高效记录 IPFS 的 <a href="https://docs.ipfs.tech/concepts/ipns/">IPNS</a> 地址的方法。</p>
+        <p>探索使用四个汉字高效记录IPFS的<a href="https://docs.ipfs.tech/concepts/ipns/">IPNS</a>地址的方法。</p>
     </div>
 </body>
 </html>
